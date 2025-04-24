@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+
+<h2>Каталог книг</h2>
+
+<div style="margin-bottom: 1rem;">
+  <input [(ngModel)]="searchQuery" placeholder="Поиск по названию..." />
+  <button (click)="onSearch()">Поиск</button>
+</div>
+
+<div style="margin-bottom: 1rem;">
+  <label>
+    Жанр:
+    <select [(ngModel)]="selectedGenre">
+      <option value="">----------</option>
+      <option *ngFor="let genre of genres" [value]="genre">{{ genre }}</option>
+    </select>
+  </label>
+  <label>
+    Издательство:
+    <select [(ngModel)]="selectedPublisher">
+      <option value="">----------</option>
+      <option *ngFor="let publisher of publishers" [value]="publisher">{{ publisher }}</option>
+    </select>
+  </label>
+  <label>
+    Возраст:
+    <select [(ngModel)]="selectedAgeLimit">
+      <option value="">----------</option>
+      <option *ngFor="let age of ageLimits" [value]="age">{{ age }}</option>
+    </select>
+  </label>
+  <label>
+    Макс. цена:
+    <input type="number" [(ngModel)]="maxPrice" placeholder="до..." />
+  </label>
+  <button (click)="onFilterChange()">Применить фильтр</button>
+</div>
+
+<div *ngIf="books.length === 0">Нет книг для отображения</div>
+
+<div *ngFor="let book of books" style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem;" class="book-card">
+  <h3>{{ book.title }}</h3>
+  <img src="{{ book.image_url }}" alt="photo">
+  <p>{{ book.description }}</p>
+  <p><strong>Цена:</strong> {{ book.price }}₸</p>
+  <a [routerLink]="['/book', book.id]">Подробнее</a>
+  <button (click)="addToCart(book.id)">Добавить в корзину</button>
+</div>

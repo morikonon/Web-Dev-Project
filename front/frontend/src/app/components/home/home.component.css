@@ -1,0 +1,45 @@
+body {
+    background: url('https://s0.rbk.ru/v6_top_pics/media/img/0/73/347151579745730.webp') ;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Цвет фона */
+    font-family: 'Segoe UI', sans-serif; /* Шрифт */
+    background: url('https://s0.rbk.ru/v6_top_pics/media/img/0/73/347151579745730.webp');
+}
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-color: aqua;
+    background: url('https://s0.rbk.ru/v6_top_pics/media/img/0/73/347151579745730.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* затемнение */
+    padding: 40px;
+    border-radius: 16px;
+    color: #ffffff;
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #dddddd;
+  }
+  

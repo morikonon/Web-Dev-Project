@@ -1,0 +1,14 @@
+<nav *ngIf="authService.isLoggedIn()">
+    <a routerLink="/home">Главная</a>
+    <a routerLink="/catalog">Каталог</a>
+    <a routerLink="/cart">Корзина</a>
+    <a routerLink="/orders">Мои заказы</a>
+    <a routerLink="/profile">Профиль</a>
+    <a (click)="logout()">Выйти</a>
+  </nav>
+  
+  <nav *ngIf="!authService.isLoggedIn()">
+    <a routerLink="/login">Войти</a>
+    <a routerLink="/register">Регистрация</a>
+  </nav>
+  

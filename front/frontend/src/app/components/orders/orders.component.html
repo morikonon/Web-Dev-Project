@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+
+<h2>Мои заказы</h2>
+
+<div *ngIf="orders.length === 0">
+  <p>У вас пока нет заказов</p>
+</div>
+
+<div *ngFor="let order of orders" style="border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem;">
+  <h3>Заказ #{{ order.id }}</h3>
+  <ul>
+    <li *ngFor="let item of order.items">
+      {{ item.book.title }} — {{ item.quantity }} × {{ item.book.price }}₸
+    </li>
+  </ul>
+  <p><strong>Общая сумма:</strong> {{ order.total_price }}₸</p>
+</div>

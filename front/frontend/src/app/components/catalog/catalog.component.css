@@ -1,0 +1,89 @@
+body {
+    background-color: #f7f8fa;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    color: #2c3e50;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: border 0.3s;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 16px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #3a78c2;
+  }
+  
+  label {
+    margin-right: 1rem;
+    font-weight: 500;
+  }
+  
+  .book-card {
+    background-color: white;
+    border: 1px solid #e1e4e8;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  .book-card img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+  }
+  
+  .book-card h3 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+  
+  .book-card p {
+    margin: 0.5rem 0;
+  }
+  
+  .book-card a {
+    display: inline-block;
+    margin-right: 1rem;
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  
+  .book-card a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,17 @@
+<h2>Моя корзина</h2>
+
+<div *ngIf="cartItems.length === 0">Корзина пуста.</div>
+
+<ul *ngIf="cartItems.length > 0">
+  <li *ngFor="let item of cartItems">
+    <h3>{{ item.book.title }}</h3>
+    <img src="{{ item.book.image_url }}">
+    <p>Количество: {{ item.quantity }}</p>
+    <p>Цена за штуку: {{ item.book.price }} ₸</p>
+    <p>Сумма: {{ item.book.price * item.quantity }} ₸</p>
+    <hr />
+  </li>
+</ul>
+
+<h3 *ngIf="cartItems.length > 0">Общая сумма: {{ totalPrice }} ₸</h3>
+
