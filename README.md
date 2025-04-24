@@ -1,27 +1,33 @@
-📚 BookBazaar
+BookBazaar
 
-📖 Описание
+Team Members
 
-BookBazaar — это веб-приложение для покупки книг. Пользователи могут просматривать каталог, оформлять заказы, оставлять отзывы и управлять избранными книгами. В проекте реализованы аутентификация, корзина, фильтры и админ-панель.
+Dýisenáli Temirlan - 23B030344
+Baizak Erasyl Shakhislamuly - 23B030285
+Daniyaruly Mukhamedali - 23B031269
 
-🚀 Функционал
+Description
 
-✔️ Каталог книг с фильтрацией и поиском
+BookBazaar is a web—based book purchase application. Users can browse the catalog, place orders, leave reviews, and manage their favorites. The project implements authentication, shopping cart, filters and admin panel.
 
-✔️ Регистрация и авторизация (JWT)
+Functional
 
-✔️ Добавление книг в избранное
+✔️ Catalog of books with filtering and search
 
-✔️ Оформление заказов через корзину
+✔️ Registration and Authorization (JWT)
 
-✔️ Просмотр истории заказов
+✔️ Adding books to favorites
 
-✔️ Оставление отзывов и рейтингов
+✔️ Making orders through the shopping cart
 
-✔️ Админ-панель для управления книгами
+✔️ Viewing the order history
+
+✔️ Leaving reviews and ratings
+
+✔️ Admin panel for managing books
 
 
-🛠️ Технологии
+Technologies
 
 Frontend: Angular, TypeScript, Bootstrap
 
@@ -30,15 +36,15 @@ Backend: Django Rest Framework (DRF), PostgreSQL
 
 Auth: JWT (JSON Web Token)
 
-📂 Установка и запуск
+Installation and launch
 
 🔧 Frontend
 
 bash
 
-Копировать
+Copy
 
-Редактировать
+Edit
 
 git clone https://github.com/your-repo/bookbazaar.git
 
@@ -48,16 +54,16 @@ npm install
 
 ng serve
 
-Перейдите в браузере на http://localhost:4200.
+Go to the browser to http://localhost:4200 .
 
 
-🖥 Backend
+Backend
 
 bash
 
-Копировать
+Copy
 
-Редактировать
+Edit
 
 cd backend
 
@@ -67,26 +73,22 @@ python manage.py migrate
 
 python manage.py runserver
 
-API доступно на http://localhost:8000/api/.
+The API is available on http://localhost:8000/api /.
 
-👥 Участники проекта
+Project participants
 
-Имя Фамилия (Frontend, Angular)
+First Name Last Name (Frontend, Angular)
 
-Имя Фамилия (Backend, DRF)
+First Name Last Name (Backend, DRF)
 
-Имя Фамилия (Fullstack, Database)
+First Name Last Name (Fullstack, Database)
 
-📌 Прогресс и задачи
+Progress and challenges
 
- Создана структура проекта
+ The project structure has been created
 
- Реализована авторизация
+ Authorization implemented
 
- Настроены API-сервисы
+ API services are configured
 
- Завершена работа над корзиной
-
-📜 Лицензия
-
-Этот проект распространяется под лицензией MIT.
+ Work on the shopping cart is completed
